@@ -40,7 +40,7 @@ You will need these files to complete this assignment: BST.zip  Download
 * You must pass parts 1 - 5 as well as Valgrind to receive credit for this part.
 
 ### Requirement Notes
-* There are multiple correct methods for removing nodes from a tree; each method may result in a distinct tree. Some conventions need to be used to ensure that your tree properly matches ours. When removing, use the method described on page 476 of the course text (i.e. when removing a node with only one child, replace that node with its child and use the in-order predecessor when removing nodes with two children).
+* There are multiple correct methods for removing nodes from a tree; each method may result in a distinct tree. Some conventions need to be used to ensure that your tree properly matches ours. When removing a node with only one child, replace that node with its child and use the in-order predecessor when removing nodes with two children).
 * Remember to disallow duplicate entries and to handle the case when the element to be removed is not in the tree.
 You are required to write a separate '.h' and '.cpp' for every class you implement.
 You may not use any standard library data structures for this lab (vector, list, etc.).
