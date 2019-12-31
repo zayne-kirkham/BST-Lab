@@ -15,7 +15,24 @@ A binary search tree (BST), which may sometimes be called an ordered or sorted b
 * Both the left and right subtrees of a node also must be binary search trees (each subtree must have the first three properties). [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 ## Requirements
-You will need these files to complete this assignment: BST.zip  Download 
+You will need the files in this repository to complete this assignment.  Clone the repository to get started.
+
+## Hints!
+The code in Binary_Search_Tree.h will work for this lab, but the strategy may make it harder to implement the next lab (AVL).  The Binary_Search_Tree.h code calls replace_parent() with the following strategy:
+```
+      This function finds the rightmost local root that 
+      does not have a right child. The data in this local_root
+      replaces the data in old_root. The pointer to local_root
+      is then saved in old_root and local_root is replaced
+      by its left child.
+```      
+A better strategy would be to 
+
+1) Find the rightmost local root that does not have a right child and call it local_root
+2) Replace the data in old_root with the data in local root.
+3) Call delete on the left subtree of old_root to delete the local root node
+
+Although this strategy wil cause you to traverse the tree twice, it will make it easier to rebalance the tree in the next lab.
 
 ### Part 1 - Add Nodes to the Tree (13 points)
 * Implement the NodeInterface getRootNode() function and the add() function.
