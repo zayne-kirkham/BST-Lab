@@ -35,7 +35,7 @@ A better strategy would be to
 Although this strategy wil cause you to traverse the tree twice, it will make it easier to rebalance the tree in the next lab.
 
 ### Part 1 - Add Nodes to the Tree (13 points)
-* Implement the NodeInterface getRootNode() function and the add() function.
+* Implement the BSTInterface getRootNode() function and the add() function.
 * You must use your implementation of NodeInterface properly in the structure of your binary search tree.
 
 ### Part 2 - Remove and Clear (26 points)
