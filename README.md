@@ -1,4 +1,4 @@
-# Lab7-BST
+# BST Lab
 
 ## Purpose
 To learn how to add and remove from a binary search tree. This lab will prepare you for the upcoming AVL lab.
