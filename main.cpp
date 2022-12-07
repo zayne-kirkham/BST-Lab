@@ -104,7 +104,7 @@ string BSTtoString(BST* bst) {
 	queue<NodeInterface*> readQ; // used to read in the levels of the tree, contains Node*
 	stringstream nodeReader_ss; // used to store the values of the nodes and the level-order sequence
 	int depth = 0; // the depth of a node on the tree
-
+    cout << "foobar" << endl;
 	if (bst->getRootNode() == NULL) {
 		return "BST is empty";
 	}
